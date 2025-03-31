@@ -1,0 +1,287 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ecf7ff;
+  color: #6b708d;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+nav {
+  background-color: #ecf7ff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+nav .contact-us {
+  background-color: #072ac8;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+}
+
+nav .contact-us:hover {
+  color: #ffc600;
+  background-color: #0549a8;
+}
+
+nav a:hover {
+  color: #072ac8;
+}
+
+/* Headings */
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #292e47;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #292e47;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #6b708d;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #292e47;
+}
+
+/* Body Text */
+.body-intro-medium {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.body-intro-regular {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.headline-regular {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.headline-medium {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.caption-1 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.caption-2 {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.p {
+  color: #292e47;
+}
+
+/* Boxes */
+.box {
+  background-color: #f2f4fc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  margin-top: 100px;
+}
+
+.hero-content {
+  width: 50%;
+}
+
+.hero-images {
+  position: relative;
+  width: 50%;
+  height: auto;
+}
+
+.img-hero {
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+.img-card {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 60%;
+  height: auto;
+  z-index: 1;
+}
+
+.img-card-bottom {
+  position: absolute;
+  bottom: -20%;
+  right: -10%;
+  width: 60%;
+  height: auto;
+  z-index: 2;
+}
+
+.hero-content-buttons a {
+  color: #6b708d;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease;
+}
+
+.hero-content-buttons a:hover {
+  background-color: #072ac8;
+  color: #ffc600;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+/* Clients Section */
+.clients {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+.clients a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+}
+
+.clients .img-client {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  max-width: 120px;
+  height: auto;
+}
+
+.clients a:hover .img-client {
+  filter: grayscale(0%);
+}
+
+/* Services Section */
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.services-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.services-card:hover {
+  transform: translateY(-10px);
+}
+
+.img-services img {
+  max-width: 50px;
+  margin-bottom: 20px;
+}
+
+.services-card .learn-more {
+  color: #072ac8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.services-card .learn-more:hover {
+  color: #ffc600;
+}
+
+/* Newsletter Section */
+.newsletter {
+  background-color: #ffc600;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter input {
+  padding: 10px;
+  width: 50%;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.newsletter-subscribe {
+  background-color: #072ac8;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 45px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.newsletter-subscribe:hover {
+  background-color: #051f8d;
+}
