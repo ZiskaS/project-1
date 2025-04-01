@@ -1,0 +1,39 @@
+/* Navbar */
+nav {
+  background-color: #ecf7ff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+nav .contact-us {
+  background-color: #072ac8;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+}
+
+nav .contact-us:hover {
+  color: #ffc600;
+  background-color: #0549a8;
+}
+
+nav a:hover {
+  color: #072ac8;
+}

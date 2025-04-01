@@ -1,0 +1,68 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ecf7ff;
+  color: #6b708d;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #292e47;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #292e47;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #6b708d;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #292e47;
+}
+
+/* Body Text */
+.body-intro-medium {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.body-intro-regular {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.headline-regular {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.headline-medium {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.caption-1 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.caption-2 {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+p {
+  color: #292e47;
+}
