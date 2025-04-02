@@ -97,7 +97,10 @@
   position: relative;
   width: 100%;
   height: 50vh;
+  background: url("/assets/testimonial-section/orbit.png") no-repeat center
+    center;
   background-color: #292e47;
+  background-size: cover;
   margin: 0 auto;
   display: flex;
   flex-direction: column;

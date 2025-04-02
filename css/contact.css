@@ -1,0 +1,71 @@
+#form-container {
+  width: 60%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: transparent;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nameDiv {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.nameDiv input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #f2f4fc;
+}
+
+.emailAndPhone {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-bottom: 15px;
+}
+
+.emailAndPhone div {
+  flex: 1;
+}
+
+.emailAndPhone input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #f2f4fc;
+}
+
+.messageDiv {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.messageDiv textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  resize: none;
+  background-color: #f2f4fc;
+}
+
+.buttonSubmit {
+  width: 100%;
+}
+
+.buttonSubmit button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.buttonSubmit button:hover {
+  background-color: #0056b3;
+}

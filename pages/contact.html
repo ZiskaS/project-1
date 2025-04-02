@@ -1,70 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circle Agency - Contact</title>
-</head>
-<body>
-    <header-component>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </nav>
-      </header-component>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle Agency - Home</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/burger.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="/">
+          <img src="/assets/logos/circle.svg" alt="Logo" />
+        </a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#" class="contact-us">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <form id="form-container" action="" method="get" class="formClass">
-        <h1>Contact Us</h1>
+      <h1>Contact Us</h1>
 
-        <div class="nameDiv">
-            <label for="name">Full Name</label><br>
-            <input type="text" placeholder="Enter your full name" name="name" id="name" onblur="validateName()"
-                required>
-            <p id="errorName" hidden class="errorForm">Please, complete the field NAME with your name</p>
+      <div class="nameDiv">
+        <label for="name">Full Name</label><br />
+        <input
+          type="text"
+          placeholder="Enter your full name"
+          name="name"
+          id="name"
+          onblur="validateName()"
+          required
+        />
+        <p id="errorName" hidden class="errorForm">
+          Please, complete the field NAME with your name
+        </p>
+      </div>
+      <div class="emailAndPhone">
+        <div>
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+            onblur="validateEmail()"
+            required
+          />
+          <p id="errorEmail" hidden class="errorForm">
+            Please, complete the field EMAIL
+          </p>
+          <p id="errorFormatEmail" hidden class="errorForm">Invalid email</p>
         </div>
-        <div class="emailAndPhone">
-            <div>
-                <label for="email">Email</label><br>
-                <input type="email" name="email" id="email" placeholder="Enter your email address"
-                    onblur="validateEmail()" required>
-                <p id="errorEmail" hidden class="errorForm">Please, complete the field EMAIL</p>
-                <p id="errorFormatEmail" hidden class="errorForm">Invalid email</p>
-            </div>
-            <div>
-                <label for="phone">Phone</label><br>
-                <input type="text" name="phone" id="phone" placeholder="Enter your phone number"
-                    onblur="validatePhone()" required>
-                <p id="errorPhone" hidden class="errorForm">Please enter your phone number</p>
-            </div>
+        <div>
+          <label for="phone">Phone</label><br />
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="Enter your phone number"
+            onblur="validatePhone()"
+            required
+          />
+          <p id="errorPhone" hidden class="errorForm">
+            Please enter your phone number
+          </p>
         </div>
-        <div class="messageDiv">
-            <label for="message">Message</label><br>
-            <textarea name="message" id="message" cols="30" rows="10"
-                placeholder="Write your message here..." onblur="validateMessage()" required></textarea>
-                <p id="errorMessageUser" hidden class="errorForm">Write us at least 5 characters</p>
-
+      </div>
+      <div class="messageDiv">
+        <label for="message">Message</label><br />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Write your message here..."
+          onblur="validateMessage()"
+          required
+        ></textarea>
+        <p id="errorMessageUser" hidden class="errorForm">
+          Write us at least 5 characters
+        </p>
+      </div>
+      <div class="buttonSubmit">
+        <button type="button" onclick="sendForm()" id="submitForm">
+          Submit
+        </button>
+        <p class="errorForm" id="errorSubmit" hidden>
+          PLEASE, REVIEW THE REQUIRED FIELDS
+        </p>
+      </div>
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close-button">x</span>
+          <h4>Thank you! Your form has been sent successfully!!</h4>
         </div>
-        <div class="buttonSubmit">
-            <button type="button" onclick="sendForm()" id="submitForm">Submit</button>
-            <p class="errorForm" id="errorSubmit" hidden>PLEASE, REVIEW THE REQUIRED FIELDS</p>
-        </div>
-        <div class="modal">
-            <div class="modal-content">
-                <span class="close-button">x</span>
-                <p class="modal-title">Circle Agency</p>
-                <br>
-                <h4>Thank you! Your form has been sent successfully!!</h4>
-            </div>
-        </div>
+      </div>
     </form>
 
-    <footer-component></footer-component>
+    <footer class="footer">
+      <div class="address-info">
+        <a class="address-info-logo" href="/">
+          <img src="/assets/logos/circle.svg" alt="Circle Logo" />
+        </a>
+        <p>
+          2972 Westheimer Rd. Santa Ana, <br />
+          llinois 85486
+        </p>
+      </div>
+      <ul class="sitemap">
+        <li>
+          <p><a href="#">Team</a></p>
+        </li>
+        <li>
+          <p><a href="#">Services</a></p>
+        </li>
+        <li>
+          <p><a href="#">About Us</a></p>
+        </li>
+        <li>
+          <p><a href="#">Press</a></p>
+        </li>
+        <li>
+          <p><a href="#">Projects</a></p>
+        </li>
+        <li>
+          <p><a href="#">Privacy Policy</a></p>
+        </li>
+      </ul>
+    </footer>
 
     <script src="../js/modal.js"></script>
     <script src="../js/contact.js"></script>
-</body>
-</body>
+  </body>
 </html>
