@@ -17,9 +17,11 @@
         </a>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#" class="contact-us">Contact Us</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li>
+            <a href="./pages/contact.html" class="contact-us">Contact Us</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -94,9 +96,9 @@
 
     <section id="projects" class="recent-projects">
       <h2 class="capitalize">Recent projects</h2>
-      <div class="projects-container">
+      <div class="projects-container" id="projects-container">
         <article class="project-card">
-          <a class="project-wrapper" href="/pages/projects?id=1">
+          <a class="project-wrapper" href="./pages/projects.html">
             <img
               class="img-project"
               src="./assets/projects-section/1.jpg"
@@ -107,12 +109,12 @@
               <p class="project-description capitalize">
                 UI design & App development
               </p>
-              <a class="learn-more" href="/pages/projects?id=1">Learn more</a>
+              <a class="learn-more" href="./pages/projects.html">Learn more</a>
             </div>
           </a>
         </article>
         <article class="project-card">
-          <a class="project-wrapper" href="/pages/projects?id=2">
+          <a class="project-wrapper" href="./pages/projects.html">
             <img
               class="img-project"
               src="./assets/projects-section/2.jpg"
@@ -121,12 +123,12 @@
             <div class="project-inner-card">
               <h4 class="project-title">Dashcoin</h4>
               <p class="project-description capitalize">Web development</p>
-              <a class="learn-more" href="/pages/projects?id=2">Learn more</a>
+              <a class="learn-more" href="./pages/projects.html">Learn more</a>
             </div>
           </a>
         </article>
         <article class="project-card">
-          <a class="project-wrapper" href="/pages/projects?id=3">
+          <a class="project-wrapper" href="./pages/projects.html">
             <img
               class="img-project"
               src="./assets/projects-section/3.jpg"
@@ -137,7 +139,7 @@
               <p class="project-description capitalize">
                 User experience design
               </p>
-              <a class="learn-more" href="/pages/projects?id=3">Learn more</a>
+              <a class="learn-more" href="./pages/projects.html">Learn more</a>
             </div>
           </a>
         </article>
@@ -175,16 +177,16 @@
             We really enjoyed working with you."
           </p>
         </div>
-        <div class="testimonial-profile">
+        <div class="testimonial-profile-wrapper">
           <img
             class="testimonial-profile-img"
             src="/assets/testimonial-section/profile.png"
             alt="Kristin Watson profile image"
           />
-        </div>
-        <div class="testimonial-profile-info">
-          <p class="name">Kristin Watson</p>
-          <p class="origin">Booking.com</p>
+          <div class="testimonial-profile-info">
+            <p class="name">Kristin Watson</p>
+            <p class="origin">Booking.com</p>
+          </div>
         </div>
       </div>
     </section>

@@ -1,7 +1,11 @@
+h2.capitalize {
+  padding: 50px 200px;
+}
+
 /* Boxes */
 .box {
   background-color: #f2f4fc;
-  padding: 20px;
+  padding: 50px 200px;
   border-radius: 10px;
 }
 
@@ -11,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 20px;
+  padding: 50px 200px;
   margin-top: 100px;
 }
 
@@ -66,11 +70,11 @@
 
 /* Clients Section */
 .clients {
-  margin-top: 150px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 20px 0;
+  padding: 50px 200px;
   flex-wrap: wrap;
 }
 
@@ -96,12 +100,13 @@
 .testimonial-memojis {
   position: relative;
   width: 100%;
+  max-width: 1300px;
   height: 50vh;
   background: url("/assets/testimonial-section/orbit.png") no-repeat center
     center;
   background-color: #292e47;
   background-size: cover;
-  margin: 0 auto;
+  margin: 200px auto 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -119,6 +124,20 @@
   font-size: 24px;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.testimonial-profile-info .name {
+  color: #a2d6f9;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.testimonial-profile-info .origin {
+  color: #ecf7ff;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
 }
 
 .testimonial-memoji1,
@@ -150,19 +169,32 @@
   right: 0;
 }
 
+.testimonial-profile-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.testimonial-profile-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
 .testimonial-profile-img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
-  margin-top: 20px;
+  margin-right: 10px;
 }
 
 /* Services Section */
 .services-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  padding: 50px 200px;
   gap: 30px;
 }
 
@@ -203,7 +235,6 @@
   background-color: #ffc600;
   padding: 40px;
   text-align: center;
-  border-radius: 10px;
   width: 100%;
   max-width: 1200px;
   margin: 50px auto;
@@ -249,6 +280,8 @@
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
+  padding: 0 200px;
+  margin-bottom: 50px;
 }
 
 .address-info {
@@ -264,11 +297,12 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   width: 50%;
+  padding-right: 200px;
 }
 
 .sitemap li {
   width: 33.33%;
-  text-align: right;
+  text-align: left;
   position: relative;
 }
 
@@ -283,4 +317,11 @@
 
 .sitemap a:hover {
   text-decoration: underline;
+}
+
+.clients,
+.testimonial-memojis,
+.services-container,
+.newsletter {
+  margin-bottom: 200px !important;
 }

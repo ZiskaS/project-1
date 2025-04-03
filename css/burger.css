@@ -1,19 +1,26 @@
 /* Navbar */
 nav {
-  background-color: #ecf7ff;
+  background-color: #f2f4fc;
   padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   position: relative;
 }
 
+/* Logo im Header */
+nav .logo {
+  position: absolute;
+  left: 180px;
+}
+
+/* Navigation Links */
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
-  justify-content: center;
+  margin: 0 auto;
   flex-grow: 1;
+  justify-content: center;
 }
 
 nav .contact-us {
@@ -24,7 +31,7 @@ nav .contact-us {
   text-decoration: none;
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: 180px;
   transform: translateY(-50%);
   transition: background-color 0.3s ease;
 }
