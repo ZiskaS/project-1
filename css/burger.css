@@ -1,16 +1,27 @@
 /* Navbar */
 nav {
   background-color: #f2f4fc;
-  padding: 20px;
+  padding: 50px 200px;
   display: flex;
+  justify-content: space-between; /* Logo und Kontaktbutton bleiben außen */
   align-items: center;
   position: relative;
+  box-sizing: border-box;
 }
 
-/* Logo im Header */
 nav .logo {
-  position: absolute;
-  left: 180px;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Neuer Container für die Navigationslinks */
+nav .nav-links {
+  display: flex;
+  justify-content: center; /* Zentriert die Links */
+  flex-grow: 1;
 }
 
 /* Navigation Links */
@@ -18,9 +29,8 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
-  margin: 0 auto;
-  flex-grow: 1;
-  justify-content: center;
+  margin: 0;
+  justify-content: center; /* Links innerhalb des ul zentrieren */
 }
 
 nav .contact-us {
@@ -30,8 +40,8 @@ nav .contact-us {
   border-radius: 5px;
   text-decoration: none;
   position: absolute;
+  right: 200px;
   top: 50%;
-  right: 180px;
   transform: translateY(-50%);
   transition: background-color 0.3s ease;
 }
