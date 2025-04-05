@@ -3,7 +3,7 @@ nav {
   background-color: #f2f4fc;
   padding: 50px 200px;
   display: flex;
-  justify-content: space-between; /* Logo und Kontaktbutton bleiben außen */
+  justify-content: space-between;
   align-items: center;
   position: relative;
   box-sizing: border-box;
@@ -17,10 +17,9 @@ nav .logo {
   box-sizing: border-box;
 }
 
-/* Neuer Container für die Navigationslinks */
 nav .nav-links {
   display: flex;
-  justify-content: center; /* Zentriert die Links */
+  justify-content: center;
   flex-grow: 1;
 }
 
@@ -30,7 +29,11 @@ nav ul {
   display: flex;
   gap: 20px;
   margin: 0;
-  justify-content: center; /* Links innerhalb des ul zentrieren */
+  justify-content: center;
+}
+
+nav a:hover {
+  color: #072ac8;
 }
 
 nav .contact-us {
@@ -51,6 +54,26 @@ nav .contact-us:hover {
   background-color: #0549a8;
 }
 
-nav a:hover {
-  color: #072ac8;
+/* Mobile Styling */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #f2f4fc;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .nav-links ul {
+    display: block;
+    gap: 10px;
+  }
+
+  .nav-links.active {
+    display: block;
+  }
 }

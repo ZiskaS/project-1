@@ -196,6 +196,14 @@ h2.capitalize {
   justify-content: space-between;
   padding: 50px 200px;
   gap: 30px;
+  margin-top: 0;
+}
+
+.services h2 {
+  text-transform: capitalize;
+  padding: 20px 200px;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
 .services-card {
@@ -323,5 +331,5 @@ h2.capitalize {
 .testimonial-memojis,
 .services-container,
 .newsletter {
-  margin-bottom: 200px !important;
+  margin-bottom: 100px !important;
 }

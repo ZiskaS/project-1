@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Circle Agency - Home</title>
+    <title>Circle Agency - Contact</title>
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/burger.css" />
     <link rel="stylesheet" href="/css/global.css" />
@@ -17,10 +17,9 @@
         </div>
         <div class="nav-links">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#services">Services</a></li>
-            <li></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#services">Services</a></li>
           </ul>
         </div>
 
@@ -91,6 +90,7 @@
           Write us at least 5 characters
         </p>
       </div>
+
       <div class="buttonSubmit">
         <button type="button" onclick="sendForm()" id="submitForm">
           Submit
@@ -99,10 +99,10 @@
           PLEASE, REVIEW THE REQUIRED FIELDS
         </p>
       </div>
-      <div class="modal">
+      <div class="modal" style="display: none">
         <div class="modal-content">
-          <span class="close-button">x</span>
           <h4>Thank you! Your form has been sent successfully!!</h4>
+          <button class="close-button" onclick="closeModal()">x</button>
         </div>
       </div>
     </form>
@@ -139,7 +139,7 @@
       </ul>
     </footer>
 
-    <script src="../js/modal.js"></script>
     <script src="../js/contact.js"></script>
+    <script src="./js/burger.js"></script>
   </body>
 </html>
