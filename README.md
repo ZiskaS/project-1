@@ -32,8 +32,10 @@ Part of the content is loaded dynamically via an external API:
 ## 🚀 Deployment
 
 The final step of the project is to **deploy the completed website**.  
-For this, we will be using **Netlify**, a hosting service for static sites.  
+For this, we are using **Netlify**, a hosting service for static websites.  
 Once the project is complete, it can be published online directly through Netlify.
+
+🔗 **Live Website:** [https://ephemeral-cocada-8307e4.netlify.app/](https://ephemeral-cocada-8307e4.netlify.app/)
 
 ---
 
